@@ -16,7 +16,7 @@ function HomePage() {
 
   return (
     <>
-      <CSSReset />
+      
       <div style={estiloDaHomePage}>
         <Menu valorDoFiltro={valorDoFiltro} setValorDoFiltro={setValorDoFiltro} />
         <Header />
@@ -31,6 +31,7 @@ function HomePage() {
 export default HomePage
 
 const StyledHeader = styled.div`
+  background-color: ${({theme}) => theme.backgroundLevel1};
   img {
     width: 80px;
     height: 80px;
